@@ -6,7 +6,7 @@
 var styleChanger = require("./styleChanger");
 var textArea = document.getElementById("code-area");
 var editor = CodeMirror.fromTextArea(textArea, {
-    mode: "javascript",
+    mode: "markdown",
     lineNumbers: true
 });
 require("./hash-injector")(editor);

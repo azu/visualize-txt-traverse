@@ -3,15 +3,18 @@
  * LICENSE : MIT
  */
 "use strict";
-var esprima = require("esprima");
-var estravese = require("estraverse");
+var parse = require("markdown-to-ast").parse;
+var txtTraverser = require("txt-ast-traverse");
 module.exports = function (code) {
-    var ast = esprima.parse(code, {loc: true});
+    var ast = parse(code);
     var enters = [];
     var leaves = [];
     var both = [];
-    estravese.traverse(ast, {
+    txtTraverser.traverse(ast, {
         enter: function (node) {
+            if (!node.loc) {
+                return;
+            }
             var items = {
                 visitorType: "enter",
                 loc: node.loc
@@ -20,6 +23,9 @@ module.exports = function (code) {
             both.push(items);
         },
         leave: function (node) {
+            if (!node.loc) {
+                return;
+            }
             var items = {
                 visitorType: "leave",
                 loc: node.loc

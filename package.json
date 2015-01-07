@@ -1,13 +1,14 @@
 {
-  "name": "visualize_estraverse",
-  "description": "visualize estraverse step",
+  "name": "visualize-txt-traverse",
+  "description": "visualize steps of txt-traverse.",
   "version": "0.0.1",
   "repository": {
-    "url": "git://github.com/azu/visualize_estraverse.git"
+    "url": "git://github.com/azu/visualize-txt-traverse.git"
   },
-  "main": "index.js",
+  "main": "app/app.js",
   "scripts": {
-    "start": "watchify app/app.js -d -o public/app.js -v",
+    "build": "browserify app/app.js -o public/app.js -v",
+    "watch": "watchify app/app.js -o public/app.js -v",
     "test": "mocha test/*.js"
   },
   "directories": {
@@ -16,12 +17,13 @@
   "author": "azu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/azu/visualize_estraverse/issues"
+    "url": "https://github.com/azu/visualize-txt-traverse/issues"
   },
   "dependencies": {
-    "estraverse": "^1.5.0",
+    "codemirror": "^4.0.3",
     "esprima": "^1.0.4",
-    "codemirror": "^4.0.3"
+    "markdown-to-ast": "^2.0.0",
+    "txt-ast-traverse": "^1.2.0"
   },
   "devDependencies": {
     "watchify": "^0.6.3"
