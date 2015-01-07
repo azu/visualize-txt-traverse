@@ -8,7 +8,7 @@ Visit [http://azu.github.io/visualize-txt-traverse/](http://azu.github.io/visual
 
 ### Enter/Leave
 
-![enter](http://gyazo.com/32dde137f7453811593fefdc4258966c.gif)
+![gif](http://gyazo.com/155c68f0f9ff35e0a549d655a787c01e)
 
 ## Contributing
 
