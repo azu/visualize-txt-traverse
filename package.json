@@ -22,10 +22,10 @@
   "dependencies": {
     "codemirror": "^4.0.3",
     "esprima": "^1.0.4",
-    "markdown-to-ast": "^2.0.0",
+    "markdown-to-ast": "^2.1.0",
     "txt-ast-traverse": "^1.2.0"
   },
   "devDependencies": {
-    "watchify": "^0.6.3"
+    "watchify": "^2.2.1"
   }
 }
