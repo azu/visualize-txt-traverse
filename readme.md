@@ -1,16 +1,14 @@
-# visualize_estraverse
+# visualize-txt-traverse
 
-Visualize [estraverse](https://github.com/Constellation/estraverse "Estraverse") step.
+Visualize steps of [txt-ast-traverse](https://github.com/azu/txt-ast-traverse "azu/txt-ast-traverse").
 
-=> DEMO:[visualize estraverse step](http://azu.github.io/visualize_estraverse/ "visualize estraverse step")
+## DEMO
 
-### Enter
+Visit [http://azu.github.io/visualize-txt-traverse/](http://azu.github.io/visualize-txt-traverse/)
 
-![enter](http://gyazo.com/c95075d290f373d09d760a181b32eae9.gif)
+### Enter/Leave
 
-### Leave
-
-![leave](http://gyazo.com/b5139df70f41da37ee45d79647d8394f.gif)
+![enter](http://gyazo.com/32dde137f7453811593fefdc4258966c.gif)
 
 ## Contributing
 
